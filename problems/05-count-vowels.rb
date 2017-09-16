@@ -5,6 +5,11 @@
 # Difficulty: easy.
 
 def count_vowels(string)
+  vowels = ['a', 'e', 'i', 'o', 'u']
+
+  string.split('').select do |letter|
+    vowels.include?(letter)
+  end.size
 end
 
 # These are tests to check that your code is working. After writing
