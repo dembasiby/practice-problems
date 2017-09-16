@@ -6,6 +6,14 @@
 # Difficulty: easy.
 
 def palindrome?(string)
+  return true if string.length < 2
+
+  string2 = []
+
+  string.split('').each do |l|
+    string2.unshift(l)
+  end
+  string == string2.join('')
 end
 
 # These are tests to check that your code is working. After writing
